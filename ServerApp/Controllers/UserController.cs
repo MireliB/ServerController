@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using ServerApp.Models;
+using ServerApp.Controllers;
 
 namespace ServerApp.Controllers
 {
     public class UserController
     {
-        private readonly string _connectionString = "Server=localhost;Database=MyDatabase;Trusted_Connection=True;";
+        string _connectionString = "Server=localhost\\SQLEXPRESS;Database=MyDatabase;Trusted_Connection=True;";
 
         public void AddUser(User user)
         {
