@@ -5,7 +5,7 @@ public class DbTest
 {
     public static void RunTest()
     {
-        string connectionString = "Server=localhost;Database=MyDatabase;Trusted_Connection=True;";
+        string connectionString = "Server=localhost\\SQLEXPRESS;Database=MyDatabase;Trusted_Connection=True;";
         using var connection = new SqlConnection(connectionString);
 
         try
