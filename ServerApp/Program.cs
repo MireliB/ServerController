@@ -50,7 +50,6 @@ class Program
                     Console.WriteLine("\nUser Added Successfully");
                     break;
 
-
                 case "3":
                     Console.Write("Enter User ID to Delete: ");
                     if (int.TryParse(Console.ReadLine(), out int deleteId))
